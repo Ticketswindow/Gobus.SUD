@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="pics/favicon 2.ico">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="travel.css">
+        <link rel="stylesheet" href="main.scss">
+
+        <title>Go Bus</title>
+    </head>
+    <body>
+
+        <header class="header" id="header">
+
+            <nav class="nav container">
+                
+                <a href="#" class="nav__logo">GoBus</a>
+
+                <div class="nav__menu" id="nav-menu">
+
+                    <ul class="nav__list">
+
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">الواجهة</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">من نحن؟</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">إكتشف</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#place" class="nav__link">الولايات</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Theme change button -->
+                        <span class="change-theme-name">Dark mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="/pics/sudan-corinthia-hotel-t3edf2wvo1si0dw8 (3).jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">سلامتك و راحتك اولويتنا</span>
+                        <h1 class="home__data-title">معاك نحن في كل سفرة </h1>
+                        <a href="About-us.html" class="button">حجز تذاكر</a>
+
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/Awab.d245?mibextid=ZbWKwL" target="_blank" class="home__social-link">
+                            <i class="ri-facebook-box-line"></i>
+                        </a>
+                        <a href="https://t.me/+0K9FABcIT3k5NmE0" target="_blank" class="home__social-link">
+                            <i class="ri-telegram-line"></i>
+                        </a>
+                        <a href="https://iwtsp.com/249920192637" target="_blank" class="home__social-link">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </div>
+
+                   
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">متعاقدين مع افضل شركات السفر <br>حتى نضمن لك راحتك أثناء التنقل</h2>
+                        <p class="about__description">القضارف - كسلا - بورتسودان - عطبرة - دنقلا
+                             - حلفا الجديدة - سنار - كوستي - ربك - حلفا القديمة
+                              - سنجة - أسوان -القاهرة ارقين 
+
+
+                        </p>
+                        <a href="#" class="button">إستكشف</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="pics/pyramids.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="pics/pexels-cottonbro-studio-9881173.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">زور اجمل  <br>المناطق في السودان</h2>
+                
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="pics/pexels-ben-mack-6775273.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">ولاية البحر الاحمر</h2>
+                                <span class="discover__description">نعمل على مدار 24 ساعة</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="pics/pexels-artsy-solomon-1108821 (1).jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">غرب السودان</h2>
+                                <span class="discover__description">اكثر من 15 سفرية جاهزة</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">شمال السودان</h2>
+                                <span class="discover__description">18 tours available</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="pics/pexels-mathias-reding-4646841.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">شمال السودان</h2>
+                                <span class="discover__description">عروض مميزة</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== EXPERIENCE ====================-->
+            <section class="experience section">
+                <h2 class="section__title">اولويتنا راحتكم <br>و مهمتنا  خدمتك</h2>
+
+                <div class="experience__container container grid">
+                    <div class="experience__content grid">
+                        <div class="experience__data">
+                            <h2 class="experience__number">20+
+                            </h2>
+                            <span class="experience__description">رحلة <br>يومياّ</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">45</h2>
+                            <span class="experience__description">مسافر جديد  <br> يومياّ</span>
+                        </div>
+
+                        <div class="experience__data">
+                            <h2 class="experience__number">650+</h2>
+                            <span class="experience__description">زائر للموقع<br> يومياّ</span>
+                        </div>
+                    </div>
+
+                    <div class="experience__img grid">
+                        <div class="experience__overlay">
+                            <img src="pics/pixel2.jpg" alt="" class="experience__img-one">
+                        </div>
+                        
+                        <div class="experience__overlay">
+                            <img src="pics/pexels-emris-joseph-6422421.jpg" alt="" class="experience__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">Natural video </h2>
+
+                <div class="video__container container">
+                    <p class="video__description">
+                        إتعرف على السودان من خلالنا
+
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="This is US... This is SUDAN  ديل أنحنا... ودا السودان.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PLACES ====================-->
+            <section class="place section" id="place">
+                <h2 class="section__title">إختار وجهتك</h2>
+
+                <div class="place__container container grid">
+                    <!--==================== PLACES CARD 1 ====================-->
+                    <div class="place__card">
+                        <img src="pics/AI.jpg" alt="" class="place__img" >
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">الفاشر</h3>
+                                <span class="place__subtitle">غرب السودان</span>
+                                <span class="place__price">نفس اسعار السوق</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button" >
+                          <a href="About-us.html"> <i class="ri-arrow-right-line"></i></a> 
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 2 ====================-->
+                    <div class="place__card">
+                        <img src="pics/AI2.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">5,0</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">الشمالية</h3>
+                                <span class="place__subtitle">شمال السودان</span>
+                                <span class="place__price">افضل العروض</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <a href="About-us.html"><i class="ri-arrow-right-line"></i></a>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 3 ====================-->
+                    <div class="place__card">
+                        <img src="pics/AI4.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,9</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">الخرطوم</h3>
+                                <span class="place__subtitle">وسط السودان</span>
+                                <span class="place__price">افضل الأسعار</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <a href="About-us.html"><i class="ri-arrow-right-line"></i></a>
+                        </button>
+                    </div>
+
+                    <!--==================== PLACES CARD 4 ====================-->
+                    <div class="place__card">
+                        <img src="pics/AI3.jpg" alt="" class="place__img">
+                        
+                        <div class="place__content">
+                            <span class="place__rating">
+                                <i class="ri-star-line place__rating-icon"></i>
+                                <span class="place__rating-number">4,8</span>
+                            </span>
+
+                            <div class="place__data">
+                                <h3 class="place__title">بورتسودان</h3>
+                                <span class="place__subtitle">شرق السودان</span>
+                                <span class="place__price">اصلو ما بنختلف</span>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex place__button">
+                            <a href="About-us.html"><i class="ri-arrow-right-line"></i></a>
+                            
+                        </button>
+                    </div>
+
+
+                        <button class="button button--flex place__button">
+                            <i class="ri-arrow-right-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">عن السفر</h3>
+                        <p class="footer__description">من لم يرَ إلّا بلده يكون قد قرأ الصفحة الأولى فقط من كتاب الكون. في الأسفار علم للشبان واختبار للشيوخ.
+                        </p>
+                        <div>
+                            <a href="https://www.facebook.com/Awab.d245?mibextid=ZbWKwL" target="_blank" class="footer__social">
+                                <i class="ri-facebook-box-fill"></i>
+                            </a>
+                            <a href="https://t.me/+0K9FABcIT3k5NmE0" target="_blank" class="footer__social">
+                                <i class="ri-telegram-fill"></i>
+                            </a>
+                            <a href="https://iwtsp.com/249920192637" target="_blank" class="footer__social">
+                                <i class="ri-whatsapp-fill"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">من نحن</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">من نحن؟</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">التشكيلات</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">جديدنا؟</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">الشركة</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">فريق العمل</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">Plan y Pricing</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">طلب  تسجيل للتوظيف</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__data">
+                        <h3 class="footer__subtitle">الدعم و الإستشارة</h3>
+                        <ul>
+                            <li class="footer__item">
+                                <a href="" class="footer__link">FAQs</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://iwtsp.com/249920192637" class="footer__link">السينتركول</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="https://iwtsp.com/249920192637" class="footer__link">التواصل مع مكتب التنسيق</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__rights">
+                    <div class="footer__terms">
+                        <a href="#" class="footer__terms-link">Terms & Agreements</a>
+                        <a href="#" class="footer__terms-link">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="scroll-reveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="web.js"></script>
+    </body>
+</html>
