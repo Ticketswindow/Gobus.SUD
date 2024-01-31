@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Tickets</title>
+<link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h2>حجز تذاكر</h2>
+
+    <form id="bookingForm">
+
+      <div class="form-group">
+
+        <label for="name">اسمك:</label>
+
+        <input type="text" id="name" name="name" required>
+
+      </div>
+
+      <div class="form-group">
+        <label for="email">الإيميل الخاص بك إذا توفر:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="location">موقعك:</label>
+        <select id="location" name="location" required>
+          <option value="" disabled selected>إختار مكانك</option>
+          <option value="أمدرمان">أمدرمان</option>
+          <option value="الخرطوم">الخرطوم</option>
+          <option value="ود مدني">ود مدني</option>
+          <option value="كسلا">كسلا</option>
+          <option value="بورتسودان">بورتسودان</option>
+          <option value="القضارف">القضارف</option>
+          <option value="سنجة">سنجة</option>
+          <option value="ربك">ربك</option>
+          <option value="الدمازين">الدمازين</option>
+          <option value="دنقلا">دنقلا</option>
+          <option value="الدامر">الدامر</option>
+          <option value="الأبيض">الأبيض</option>
+          <option value="الفولة">الفولة</option>
+          <option value="كادوقلي">كادوقلي</option>
+          <option value="الفاشر">الفاشر</option>
+          <option value="الجنينة">الجنينة</option>
+          <option value="نيالا">نيالا</option>
+          <option value="الضعين">الضعين</option>
+          <option value="زالنجي">زالنجي</option>
+          <option value="ولاية تانية">ولاية تانية</option>
+
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="destination">وجهة السفر:</label>
+        <select id="destination" name="destination" required>
+          <option value="" disabled selected>مسافر وين؟</option>
+          <option value="أمدرمان">أمدرمان</option>
+          <option value="الخرطوم">الخرطوم</option>
+          <option value="ود مدني">ود مدني</option>
+          <option value="كسلا">كسلا</option>
+          <option value="بورتسودان">بورتسودان</option>
+          <option value="القضارف">القضارف</option>
+          <option value="سنجة">سنجة</option>
+          <option value="ربك">ربك</option>
+          <option value="الدمازين">الدمازين</option>
+          <option value="دنقلا">دنقلا</option>
+          <option value="الدامر">الدامر</option>
+          <option value="الأبيض">الأبيض</option>
+          <option value="الفولة">الفولة</option>
+          <option value="كادوقلي">كادوقلي</option>
+          <option value="الفاشر">الفاشر</option>
+          <option value="الجنينة">الجنينة</option>
+          <option value="نيالا">نيالا</option>
+          <option value="الضعين">الضعين</option>
+          <option value="زالنجي">زالنجي</option>
+          <option value="ولاية تانية">ولاية تانية</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="date">تاريخ السفر:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="tickets">عدد المسافرين:</label>
+        <input type="number" id="tickets" name="tickets" min="1" required>
+      </div>
+      <button type="submit">احجز الأن</button>
+    </form>
+  </div>
+
+  <script src="booking.js"></script>
+</body>
+</html>
