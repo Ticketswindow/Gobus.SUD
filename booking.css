@@ -119,22 +119,19 @@ button:hover {
   position: absolute
 }
 
-  
-/* Responsive styles */
-@media (max-width: 600px) {
-  .container {
-    width: 90%;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  input[type="number"],
-  select,
-  button {
-    width: 100%;
-  }
-   button{
-    margin-bottom: 20px;
-  }
+/* CSS for smaller devices */
+@media (max-width: 768px) {
+    /* Add your CSS properties here */
+    .container {
+        background-color: #f0f0f0;
+    }
+    input[type="text"],
+    input[type="email"],
+    select,
+    button,
+    a.whatsapp {
+        font-size: 14px; /* Adjust the size for smaller devices */
+    }
 }
+
 
