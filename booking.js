@@ -9,7 +9,7 @@ document.getElementById("bookingForm").addEventListener("submit", function(event
   const destination = document.getElementById("destination").value;
   
   
-  const message = `اريد ان احجز تذاكر سفر عن طريق قوباص:%0AName: ${name}%0AEmail: ${email}%0ATickets: ${tickets} %0Alocation: ${location}
+  const message = `اريد ان احجز تذاكر سفر عن طريق ستارباص:%0AName: ${name}%0AEmail: ${email}%0ATickets: ${tickets} %0Alocation: ${location}
   %0Adestination: ${destination}`;
   
   const whatsappURL = `https://wa.me/+249920192637?text=${message}`;
