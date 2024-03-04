@@ -597,63 +597,81 @@ input {
   font-size: 1.2rem;
 }
 
-/  /* Your CSS styles here */
-  .image-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20%,1fr));
-    gap: 10px;
-  }
+/*=============== PLACES ===============*/
+.place__card, .place__img {
+  height: 230px;
+}
 
-  .image-card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-  }
+.place__container {
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+}
 
-  .image-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+.place__card {
+  position: relative;
+  overflow: var(--img-hidden);
+}
 
-  .image-info {
-    padding: 10px;
-    background-color: #f8f8f8;
-  }
+.place__card:hover .place__img {
+  transform: var(--img-scale);
+}
 
-  
-.button-2 {
+.place__img {
+  transition: var(--img-transition);
+}
+
+.place__content, .place__title {
+  color: var(--white-color);
+}
+
+.place__content {
   position: absolute;
-  bottom:120px; /* Adjust as needed */
-  left: 10px; /* Adjust as needed */
-  padding: 6px 6px; /* Adjust to add space */
-  background-color: #2de488;
-  color: #fff;
-  font-size: 12px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.button-2:hover{
-    background-color: #035029;;
-}
-.image-card img {
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: .75rem .75rem 1rem;
+}
+
+.place__rating {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+}
+
+.place__rating-icon {
+  font-size: .75rem;
+  margin-right: var(--mb-0-25);
+}
+
+.place__rating-number {
+  font-size: var(--small-font-size);
+}
+
+.place__subtitle, .place__price {
   display: block;
-  transition: transform 0.3s ease; /* Add transition property */
 }
 
-.image-card:hover img {
-  transform: scale(1.1); /* Scale the image slightly on hover */
+.place__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-25);
 }
 
-  @media screen and (max-width: 767px) {
-    .image-container {
-      grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); /* Adjust for smaller devices */
-    }
+.place__subtitle {
+  font-size: var(--smaller-font-size);
+  margin-bottom: var(--mb-1-25);
+}
+
+.place__button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: .75rem 1rem;
+}
+
 
 /*=============== FOOTER ===============*/
 .footer__container {
@@ -806,6 +824,9 @@ font-style: italic;
     justify-content: center;
     text-align: center;
 }
+.button-2{
+  
+}
 
 }
 
@@ -819,6 +840,17 @@ font-style: italic;
 
 }
 
+/* Add this CSS for responsiveness on very small devices */
+@media screen and (max-width: 576px) {
+  .place__card, .place__img {
+    width: 96%;
+  }
+  .place__subtitle,
+.place__title,
+.place__price{
+  font-size: 10px;
+  font-weight: 900;
+}}
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
